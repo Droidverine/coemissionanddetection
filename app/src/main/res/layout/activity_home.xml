@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#342D40"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<com.droidverine.adminpollutionctrl.SpeedView.ProgressiveGauge
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:sv_speedTextColor="#00ffffff"
+    android:layout_gravity="top"
+    android:id="@+id/avgvalgraph"
+    app:sv_textColor="@color/colorPrimary"
+    app:sv_unitTextColor="#00ffffff"
+    app:sv_textSize="0sp"
+    app:sv_unit="avg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:text="0"
+            android:textStyle="bold"
+            android:id="@+id/avgtxt"/>
+    </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="city pollution level"
+    android:textSize="28sp"
+    android:textAlignment="center"
+    android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#5aaabb"
+        android:layout_margin="8dp">
+        <TextView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="car number : "
+            android:textSize="18sp"
+            android:id="@+id/carnum1"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO count : 0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/cocount1"
+
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#9078AA"
+        android:layout_margin="8dp">
+        <TextView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="car number : "
+            android:textSize="18sp"
+            android:id="@+id/carnum2"
+
+            android:textColor="#ffffff"/>
+        <TextView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO count : 0"
+            android:textStyle="bold"
+            android:id="@+id/cocount2"
+
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>
+
